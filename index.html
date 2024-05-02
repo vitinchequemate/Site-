@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>WolfJogos</title>
+ <link rel="stylesheet" href="reset.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header class="cabeçalho">
+ <div class="container">
+ <input type="checkbox" id="menu" class="container__botao">
+ <label for="menu" class="container__rotulo">
+ <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+ </label>
+ <ul class="lista-menu">
+ <li class="lista-menu__titulo">Categorias</li>
+ <li class="lista-menu__item">
+ <a href="#" class="lista-menu__link">FPS</a>
+ </li>
+ <li class="lista-menu__item">
+ <a href="#" class="lista-menu__link">Indie</a>
+ </li>
+ <li class="lista-menu__item">
+ <a href="#" class="lista-menu__link">Terror</a>
+ </li>
+ <li class="lista-menu__item">
+ <a href="#" class="lista-menu__link">Corrida</a>
+ </li>
+ <li class="lista-menu__item">
+ <a href="#" class="lista-menu__link">Aventura</a>
+ </li>
+ </ul>
+ <img src="img/logo(1).png" alt="Logo da Alurabooks" class="container__imagem">
+ <h1 class="container__titulo"><b class="container__titulo--negrito">Wolf</b>Jogos</h1>
+ </div>
+ <ul class="opções">
+ <input type="checkbox" id="opções-menu" class="opções__botão">
+ <label for="opções-menu" class="opções__rotulo">
+ <li class="opções__item">Categorias</li>
+ </label>
+ <ul class="lista-menu">
+ <li class="lista-menu__item">
+ <a href="#" class="lista-menu__link">FPS</a>
+ </li>
+ <li class="lista-menu__item">
+ <a href="#" class="lista-menu__link">Indie</a>
+ </li>
+ <li class="lista-menu__item">
+ <a href="#" class="lista-menu__link">Terror</a>
+ </li>
+ <li class="lista-menu__item">
+ <a href="#" class="lista-menu__link">Corrida</a>
+ </li>
+ <li class="lista-menu__item">
+ <a href="#" class="lista-menu__link">Aventura</a>
+ </li>
+ </ul>
+ <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+ <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+ </ul>
+ <div class="container">
+ <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+ class="container__imagem container__imagem-transparente"></a>
+ <a href="#" class="container__link">
+ <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+ <p class="container__texto">Minha sacola</p>
+ </a>
+ <a href="#" class="container__link">
+ <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+ <p class="container__texto">Meu perfil</p>
+ </a>
+ </div>
+ </header>
+ <section class="banner">
+ <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+ <p class="banner__texto">Encontre em nosso site os jogos que você precisa!</p>
+ <input type="search" class="banner__pesquisa" placeholder="Qual será seu próximo Jogo?">
+ </section>
+ <section class="carrossel">
+ <h2 class="carrossel__titulo">Novos lançamentos</h2>
+ <!-- Slider main container -->
+ <div class="carrossel__container">
+ <div class="swiper">
+ <!-- Additional required wrapper -->
+ <!-- If we need pagination -->
+ <div class="swiper-pagination"></div>
+ <div class="swiper-wrapper">
+ <!-- Slides -->
+ <div class="swiper-slide"><img src="img/mine.png"
+ alt="Livro sobre apache kafka e spring boot da alura books"></div>
+ <div class="swiper-slide"><img src="img/Brawhalla.png"
+ alt="Livro sobre liderança em design da alura books"></div>
+ <div class="swiper-slide"><img src="img/CS2.png"
+ alt="Livro sobre javascript assertivo da alurabooks"></div>
+ <div class="swiper-slide"><img src="img/FarCry.png" alt="Livro Guia front end"></div>
+ <div class="swiper-slide"><img src="img/Terraria.png" alt="Livro sobre portugol"></div>
+ <div class="swiper-slide"><img src="img/Fifa.png" alt="livro sobre acessibilidade"></div>
+ </div>
+ <!-- If we need navigation buttons -->
+ <div class="swiper-button-prev"></div>
+ <div class="swiper-button-next"></div>
+ </div>
+ <div class="card">
+ <!-- 1º linha -->
+ <div class="card__descrição">
+ <!-- 1º coluna -->
+ <div class="descrição">
+ <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+ <h2 class="descrição__titulo-livro">Minecraft</h2>
+ <p class="descrição__texto">Um jogo de mundo aberto, com várias opções de jogabilidade e diversão</p>
+ </div>
+
+ </div>
+
+ </div>
+ </div>
+ </div>
+ </section>
+ <section class="carrossel">
+ <h2 class="carrossel__titulo">Mais vendidos</h2>
+ <!-- Slider main container -->
+ <div class="carrossel__container">
+ <div class="swiper">
+ <!-- Additional required wrapper -->
+ <!-- If we need pagination -->
+ <div class="swiper-pagination"></div>
+ <div class="swiper-wrapper">
+ <!-- Slides -->
+ <div class="swiper-slide"><img src="img/Pes.png"
+ alt="Livro sobre apache kafka e spring boot da alura books"></div>
+ <div class="swiper-slide"><img src="img/RedDead.png"
+ alt="Livro sobre liderança em design da alura books"></div>
+ <div class="swiper-slide"><img src="img/DarkSouls.png"
+ alt="Livro sobre javascript assertivo da alurabooks"></div>
+ <div class="swiper-slide"><img src="img/God.png" alt="Livro Guia front end"></div>
+ <div class="swiper-slide"><img src="img/Forza.png"Livro sobre portugol"></div>
+ <div class="swiper-slide"><img src="img/Hollow.png" alt="livro sobre acessibilidade"></div>
+ </div>
+ <!-- If we need navigation buttons -->
+ <div class="swiper-button-prev"></div>
+ <div class="swiper-button-next"></div>
+ </div>
+ <div class="card">
+ <!-- 1º linha -->
+ <div class="card__descrição">
+ <!-- 1º coluna -->
+ <div class="descrição">
+
+ <h3 class="descrição__titulo">Jogo do Mês</h3>
+ <h2 class="descrição__titulo-livro">Forza Horizon 5</h2>
+ <p class="descrição__texto">Um jogo completo de corrida com um mundo gigantesco, e diversos carros para conquistar.
+ </p>
+ </div>
+
+ </div>
+ 
+ </div>
+ </div>
+ </div>
+ </section>
+ <section class="tópicos">
+ <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+ <ul class="tópicos__lista">
+ <li class="tópicos__item">
+ <a href="#" class="tópicos__link">FPS</a>
+ </li>
+ <li class="tópicos__item">
+ <a href="#" class="tópicos__link">Terror</a>
+ </li>
+ <li class="tópicos__item">
+ <a href="#" class="tópicos__link">Aventura</a>
+ </li>
+ <li class="tópicos__item">
+ <a href="#" class="tópicos__link">Corrida</a>
+ </li>
+ <li class="tópicos__item">
+ <a href="#" class="tópicos__link">Indie</a>
+ </li>
+ <li class="tópicos__item">
+ <a href="#" class="tópicos__link">Futebol</a>
+ </li>
+ <li class="tópicos__item">
+ <a href="#" class="tópicos__link">Mundo Aberto/a>
+ </li>
+ <li class="tópicos__item">
+ <a href="#" class="tópicos__link">Ação</a>
+ </li>
+ </ul>
+ </section>
+ <section class="contato">
+ <div class="contato__descrição">
+ <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+ <p class="contato__texto">Atualizações de jogos novos, promoções e outros.</p>
+ </div>
+ <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+ </section>
+ <hr />
+ <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+ <script>
+ const swiper = new Swiper('.swiper', {
+ spaceBetween: 10,
+ slidesPerView: 3,
+ pagination: {
+ el: '.swiper-pagination',
+ type: 'bullets',
+ },
+ });
+ </script>
+</body>
+</html>
